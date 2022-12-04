@@ -1,0 +1,884 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.header {
+   background-image: url(../images/top-img.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: 900px;
+   margin-bottom: 150px            ;
+ }
+ .logo {
+   display: flex;
+   margin: 0 auto;
+   align-items: center;
+   justify-content: center;
+   margin-top: 70px;
+ }
+ .top {
+   &__items {
+      margin-top: 261px;
+      color: $text-white;
+      text-align: center;
+      
+   }
+   &__item-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+   }
+   &__item-main-title {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 87px;
+   }
+   &__item-title {
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 57px;
+   }
+   &__btn-images {
+      margin-left: 398px;
+      margin-top: 50px;
+   }
+   &__btn-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: $text-white;
+      margin-left: 447px;
+      margin-top: -47px;
+   }
+   &__socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 20px;
+      margin-top: 166px;
+      
+   }
+ }
+ .services {
+   display: flex;
+   column-gap: 89px;
+   margin-bottom: 150px;
+
+   &__info {
+      max-width: 510px;
+   }
+   &__main-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      color: #868585;
+      padding-bottom: 60px;
+   }
+   &__info-title {
+      @extend %title-font;
+      padding-bottom: 15px 
+   }
+   &__info-text {
+      @extend %text-font;
+      padding-bottom: 50px;
+   }
+   &__images {
+      background-size: cover;
+      padding-top: 100px;
+   }
+ }
+.footer {
+   background-image: url(../images/footer-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 730px;
+   
+   &__request-name, 
+   &__request-phone  {
+      display: grid;
+      border: none;
+      width: 200%;
+      position: relative;
+      background-color: inherit;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      padding-bottom: 11px;
+      color: #fff;
+      @extend %text-font;
+      &::placeholder {
+         color: $text-white;
+      }
+      input[type="text"] {
+         color: #676767
+      }
+     
+   }
+   &__reguest-contact {
+      display: flex;
+      column-gap: 368px;
+      color: $text-white;
+      margin-bottom: 150px;
+   }
+   &__request {
+      margin-top: 70px;
+   }
+   &__request-title {
+      color: $text-white;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      padding-bottom: 74px;
+   }
+   &__request-name {
+      margin-bottom: 60px;
+   }
+   &__reguest-icon {
+      padding-top: 60px;
+      
+   }
+   &__request-text {
+      color: $text-white;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      padding-left: 50px;
+      margin-top: -38px;
+   }
+   &__contact {
+      padding-top: 70px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+   }
+   &__contact-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;   
+      padding-bottom: 60px;
+   }
+   &__contact-text-one, 
+   &__contact-text-two,
+   &__contact-text-tree,
+   &__contact-phone-number {
+      padding-bottom: 44px;
+   }
+   &__privacy-policy {
+      display: flex;
+      column-gap: 296px;
+      
+   }
+   &__policy {
+      color: $text-white;
+   }
+   &__socials {
+      display: flex;
+      column-gap: 20px;
+   }
+   &__reguest-contact {
+      margin-bottom: 49px;
+   }
+   
+   }
+   .green-tarif {
+      &__title {
+         @extend %title-font;
+         color: #868585;
+         font-size: 24px;
+         line-height: 33px;
+         margin-bottom: 60px;
+      }
+      &__btns {
+         display: flex;
+         column-gap: 40px;
+         margin-bottom: 120px;
+      }
+      &__btn {
+         border: none;
+         background-color: #fff;
+         @extend %text-font;
+         font-size: 18px;
+         line-height: 25px;
+      }
+      &__items {
+         display: flex;
+         height: 200px;
+         width: 510px;
+         margin-bottom: 100px;
+      }
+      &__images {
+         background-size: cover;
+         margin-right: 40px;
+      }
+      &__text {
+         @extend %text-font;
+         font-size: 14px;
+         line-height: 19px;
+         margin-bottom: 86px;
+      }
+      &__links {
+         display: flex;
+         column-gap: 20px;
+      }
+      &__box {
+         display: flex;
+         margin-bottom: 50px;
+      }
+      &__inner {
+         margin-right: 90px;
+      }
+      
+      &__info {
+         display: grid;
+         grid-template-columns: auto auto;
+         column-gap: 40px;
+      }
+      &__info-item {
+         width: 235px;
+         margin-bottom: 19px;
+      }
+      &__info-title {
+         @extend %title-font;
+         margin-bottom: 10px;
+      }
+      &__info-text {
+         @extend %text-font;
+      }
+      &__content {
+         margin-top: -140px;
+      }
+      &__content-title {
+         @extend %title-font;
+         margin-bottom: 20px;
+      }
+   }
+  .passive-income {
+   height: 500px;
+   background-image: url(../images/passive-income.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin-bottom: 150px;
+   &__title {
+      color: $text-white;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 57px;
+      padding: 128px 800px 144px 800px;
+   }
+  }
+
+  .our-client{
+   margin-bottom: 182px;
+   &__title {
+      @extend %title-font;
+      font-size: 24px;
+      line-height: 33px;
+      color: #868585;
+      margin-bottom: 60px;
+   }
+   &__info-box {
+      max-width: 541px;
+   }
+   &__svg {
+      margin-left: 279px;
+   }
+    &__items{
+      display: flex;
+  }
+   &__img {
+      margin-right: 91px;
+  }
+  &__info-title {
+   @extend %title-font;
+   margin-bottom: 40px;
+  }
+  &__info-text {
+   @extend %text-font;
+      margin-bottom: 16px;
+      margin-left: 50px;
+  }
+  &__sing-up {
+   @extend %text-font;
+   font-size: 18px;
+   line-height: 25px;
+   margin-left: 50px;
+   margin-top: -38px;
+  }
+  
+  &__info-img {
+   cursor: pointer;
+   margin-top: 53px;
+  }
+  }
+
+.power-plant{
+   margin-bottom: 150px ;
+   &__info {
+      display: flex;
+      column-gap: 90px;
+   }
+   
+   &__title {
+      @extend %title-font;
+      font-size: 24px;
+      line-height: 33px;
+      color: #868585;
+      max-width: 324px;
+      margin-bottom: 60px;
+   }
+   &__info-item {
+      margin-bottom: 30px;
+      max-width: 510px;
+   }
+   &__info-number {
+      @extend %text-font;
+      color: #868585;
+      margin-bottom: 11px;
+   }
+   &__info-title {
+      @extend %title-font;
+      margin-bottom: 5px;
+   }
+   &__info-text {
+      @extend %text-font;
+      line-height: 19px;
+   }
+   &__img {
+      margin-top: -130px;
+   }
+}
+
+@media screen and(max-width: 1280px) {
+  
+   .header {
+      margin-bottom: -100px            ;
+    }
+    .top {
+      &__items {
+         margin-top: 80px;
+         
+      }
+      &__item-main-title {
+         font-size: 54px;
+         line-height: 65px;
+      }
+      &__item-title {
+         font-size: 36px;
+      }
+      &__btn-images {
+         max-width: 90px;
+         max-height: 90px;
+         margin-top: 30px;
+      }
+      &__btn-text {
+         font-size: 16px;
+         line-height: 20px;
+         
+      }
+      &__socials {
+         margin-top: 100px;
+      }
+    }
+    .passive-income {
+      height: 460px;
+      margin-bottom: 0px;
+      &__title {
+         font-size: 36px;
+         line-height: 57px;
+         padding: 98px 200px 114px 200px;
+      }
+   }
+}
+
+@media screen and(max-width: 1024px) {
+  
+   .header {
+      margin-bottom: -280px;
+    }
+    .top {
+      &__items {
+         margin-top: 30px;
+         
+      }
+      &__item-main-title {
+         font-size: 44px;
+         line-height: 54px;
+      }
+      &__item-title {
+         font-size: 28px;
+      }
+      &__btn-images {
+         max-width: 70px;
+         max-height: 70px;
+         margin-top: 20px;
+      }
+      &__btn-text {
+         font-size: 14px;
+         line-height: 20px;
+         
+      }
+      &__socials {
+         margin-top: 80px;
+      }
+    }
+    .passive-income {
+      height: 460px;
+      margin-bottom: 0px;
+      &__title {
+         font-size: 28px;
+         line-height: 52px;
+         padding: 32px 160px 94px 160px;
+      }
+   }
+
+   .footer {
+      &__privacy-policy {
+         column-gap: 196px;
+     }
+     &__reguest-icon {
+      width: 140px;
+      height: 140px;
+  }
+  &__request-text {
+   color: #fff;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 25px;
+   padding-left: 50px;
+   margin-top: -38px;
+}
+   }
+}
+
+
+
+
+@media screen and(max-width: 920px) {
+  
+   .header {
+      margin-bottom: -340px;
+    }
+    .top {
+      &__items {
+         margin-top: 30px;
+         
+      }
+      &__item-main-title {
+         font-size: 42px;
+         line-height: 52px;
+      }
+      &__item-title {
+         font-size: 26px;
+      }
+      &__btn-images {
+         max-width: 70px;
+         max-height: 70px;
+         margin-top: 10px;
+      }
+      &__btn-text {
+         font-size: 14px;
+         line-height: 20px;
+         
+      }
+      &__socials {
+         margin-top: 40px;
+      }
+    }
+    .passive-income {
+      height: 460px;
+      margin-bottom: 0px;
+      &__title {
+         font-size: 28px;
+         line-height: 52px;
+         padding: 32px 160px 94px 160px;
+      }
+   }
+   .services {
+      display: flex;
+      column-gap: 89px;
+      margin-bottom: 150px;
+   
+      &__info {
+         max-width: 510px;
+      }
+      
+      &__images {
+         background-size: cover;
+         width: 390px;
+         padding-top: 100px;
+     }
+    }
+    .our-client{
+      margin-bottom: 182px;
+
+       &__items{
+         display: flex;
+         column-gap: 40px;
+     }
+     }
+     .power-plant{
+      margin-bottom: 150px ;
+      &__info {
+         display: flex;
+         column-gap: 60px;
+      }
+      
+      &__img {
+         width: 460px;
+      }
+   }
+
+   .footer {
+      &__privacy-policy {
+         column-gap: 196px;
+     }
+     &__reguest-icon {
+      width: 120px;
+      height: 120px;
+  }
+  &__request-text {
+   font-size: 16px;
+   margin-top: -30px;
+}
+&__reguest-contact {
+   display: flex;
+   column-gap: 248px;
+   margin-bottom: 60px;
+}
+&__social-icon img {
+   width: 120px;
+   height: 120px;
+}
+   }
+}
+
+@media screen and(max-width: 667px) {
+  
+   .header {
+      margin-bottom: -340px;
+      background-size: cover;
+      height: 400px;
+      margin-bottom: 150px;
+    }
+    
+    .top {
+      &__items {
+         margin-top: 20px;
+      }
+      &__item-main-title {
+         font-size: 38px;
+         line-height: 42px;
+      }
+      &__item-title {
+         font-size: 26px;
+      }
+      &__socials {
+         margin-top: -340px;
+         margin-left: 380px;
+      }
+    }
+    
+    .passive-income {
+      margin-bottom: 80px;
+      background-size: cover;
+      height: 260px;
+      &__title {
+         font-size: 20px;
+         line-height: 52px;
+         padding: 18px 110px 64px 110px;
+      }
+   }
+
+   .green-tarif {
+     
+      &__box {
+         display: grid;
+         row-gap: 180px;
+         margin-bottom: 100px;
+      }
+      &__btns {
+         justify-content: center;
+      }
+      &__items {
+         justify-content: center;
+         align-items: center;
+         margin: 0 auto;
+         padding-bottom: 60px;
+      }
+      &__info {
+         justify-content: center;
+         margin: 0 auto;
+      }
+      
+   }
+   .services {
+      display: grid;
+      row-gap: 89px;
+      margin-bottom: 150px;
+   
+      &__info {
+         justify-content: center;
+         margin: 0 auto;
+         max-width: 510px;
+      }
+      
+      &__images {
+         background-size: cover;
+         width: 660px;
+         padding-top: 100px;
+     }
+    }
+    .our-client{
+      margin-bottom: 182px;
+
+       &__items{
+         display: flex;
+         column-gap: 40px;
+     }
+     &__svg {
+         margin-left: 150px;
+     }
+     &__info-img {
+         width: 60px;
+         height: 60px;
+     }
+     &__sing-up {
+      font-size: 14px;
+     }
+     }
+     .power-plant{
+      margin-bottom: 150px ;
+      &__info {
+         display: grid;
+         row-gap: 160px;
+      }
+      &__info-items {
+         justify-content: center;
+         align-items: center;
+         margin: 0 auto;
+      }
+      
+      &__img {
+         width: 660px;
+      }
+   }
+
+   .footer {
+      &__privacy-policy {
+         column-gap: 26px;
+     }
+     &__reguest-icon {
+      width: 120px;
+      height: 120px;
+  }
+  &__request-text {
+   font-size: 16px;
+   margin-top: -30px;
+}
+&__reguest-contact {
+   display: flex;
+   column-gap: 20px;
+   margin-bottom: 60px;
+}
+&__social-icon img {
+   width: 30px;
+   height: 30px;
+}
+
+   }
+}
+@media screen and(max-width: 360px) {
+  
+   .header {
+      margin-bottom: -340px;
+      background-size: cover;
+      height: 500px;
+      margin-bottom: 150px;
+    }
+    
+    .top {
+      &__items {
+         margin-top: 20px;
+      }
+      &__item-main-title {
+         font-size: 25px;
+         line-height: 42px;
+      }
+      &__item-title {
+         font-size: 26px;
+      }
+      &__socials {
+         margin-top: -440px;
+         margin-left: 80px;
+      }
+      &__social-icon {
+         width: 30px;
+         height: 30px;
+      }
+      &__btn-images {
+         margin-left: 130px;
+      }
+      &__btn-text {
+         margin-left: 140px;
+      }
+
+    }
+    
+    .passive-income {
+      margin-bottom: 80px;
+      background-size: cover;
+      height: 260px;
+      &__title {
+         font-size: 18px;
+         line-height: 32px;
+         padding: 18px 68px 64px 68px;
+      }
+   }
+
+   .green-tarif {
+     
+      &__box {
+         display: grid;
+         row-gap: 180px;
+         margin-bottom: 100px;
+      }
+      &__btns {
+         column-gap: 20px;
+      }
+      &__btn {
+         font-size: 14px;
+      }
+      &__items {
+         display: grid;
+         margin-bottom: 260px;
+         max-width: 360px;
+         row-gap: 30px;
+         
+      }
+      &__info {
+         display: grid;
+         row-gap: 20px;
+         grid-template-columns: none;
+      }
+      &__content {
+         max-width: 360px;
+      }
+      &__images {
+         width: 340px;
+      }
+      &__link-img-left {
+         display: none;
+      }
+      &__link-img-right {
+         display: none;
+      }
+      
+   }
+   .services {
+      display: grid;
+      row-gap: 89px;
+      margin-bottom: 150px;
+   
+      &__info {
+         justify-content: center;
+         margin: 0 auto;
+         max-width: 510px;
+      }
+      
+      &__images {
+         background-size: cover;
+         width: 660px;
+         padding-top: 100px;
+     }
+    }
+    .our-client{
+      margin-bottom: 182px;
+
+       &__items{
+         display: grid;
+         row-gap: 40px;
+     }
+     &__svg {
+         margin-left: 150px;
+     }
+     &__info-img {
+         width: 60px;
+         height: 60px;
+     }
+     &__sing-up {
+      font-size: 14px;
+     }
+     }
+     .power-plant{
+      margin-bottom: 150px ;
+      &__info {
+         display: grid;
+         row-gap: 160px;
+      }
+      &__info-items {
+         justify-content: center;
+         align-items: center;
+         margin: 0 auto;
+      }
+      
+      &__img {
+         width: 660px;
+      }
+   }
+
+   .footer {
+      height: 1200px;
+      &__privacy-policy {
+         display: grid;
+         row-gap: 30px;
+     }
+     &__reguest-icon {
+      width: 120px;
+      height: 120px;
+  }
+  &__request-text {
+   font-size: 16px;
+   margin-top: -30px;
+}
+&__reguest-contact {
+   display: grid;
+   row-gap: 20px;
+   margin-bottom: 60px;
+}
+   &__request-name{
+      margin-bottom: 30px;
+   width: 100% !important;
+   }
+   &__request-phone {
+      width: 100% !important;
+   }
+   &__contact-text-one, &__contact-text-two, &__contact-text-tree, &__contact-phone-number {
+      font-size: 16px;
+      margin-bottom: 0px;
+   } 
+   &__logo {
+      width: 120px;
+   }
+
+&__social-icon img {
+   width: 20px;
+   height: 20px;
+}
+
+   }
+}
+
+
+
+
+

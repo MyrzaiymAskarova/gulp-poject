@@ -1,0 +1,19 @@
+$text-black: #303030;
+$text-white: #ffffff;
+
+
+%title-font {
+font-family: 'Noto Sans';
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+color: $text-black;
+}
+
+%text-font {
+font-family: 'Noto Sans';
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+color: $text-black;
+}
